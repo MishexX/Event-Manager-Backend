@@ -104,7 +104,7 @@ exports.verifyEmail = async (req, res) => {
     await user.save();
 
     // Redirect to frontend URL with a query parameter indicating success
-    res.redirect('http://127.0.0.1:8080?emailVerified=true'); // Update with your frontend URL
+    res.redirect('https://event-manager-frontend-iuwd.vercel.app/?emailVerified=true'); // Update with your frontend URL
   } catch (error) {
     console.error('Error during email verification:', error);
     res.status(500).json({ message: 'Server error' });

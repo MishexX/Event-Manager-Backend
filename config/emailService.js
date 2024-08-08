@@ -15,8 +15,10 @@ const transporter = nodemailer.createTransport({
 
 // Function to send verification email
 const sendVerificationEmail = async (email, verificationToken) => {
-  const verificationUrl = `http://localhost:5000/api/auth/verify-email?token=${verificationToken}`;
+  const verificationUrl = `https://event-manager-backend-cgrz.onrender.com/api/auth/verify-email?token=${verificationToken}`;
 
+  http://127.0.0.1:8080/?emailVerified=true 
+ 
   const mailOptions = {
     from: 'garnett44@ethereal.email',
     to: email,
