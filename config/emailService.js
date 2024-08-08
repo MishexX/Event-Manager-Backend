@@ -26,6 +26,8 @@ const sendVerificationEmail = async (email, verificationToken) => {
     text: `Please verify your email by clicking on the following link: ${verificationUrl}`
   };
 
+  
+
   try {
     await transporter.sendMail(mailOptions);
     console.log('Verification email sent');
