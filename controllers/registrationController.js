@@ -2,17 +2,7 @@ const Event = require('../models/Event');
 const Registration = require('../models/Registration');
 
 
-// Create a new registration
-// exports.createRegistration = async (req, res) => {
-//   try {
-//     const { userEmail, eventName, time, location, image, admin } = req.body;
-//     const newRegistration = new Registration({ userEmail, eventName, time, location, image, admin });
-//     await newRegistration.save();
-//     res.status(201).json({ message: 'Registration created successfully', registration: newRegistration });
-//   } catch (error) {
-//     res.status(500).json({ error: 'Failed to create registration' });
-//   }
-// };
+
 
 exports.createRegistration = async (req, res) => {
     try {

@@ -201,29 +201,7 @@ exports.searchEvents = async (req, res) => {
       res.status(400).json({ error: error.message });
   }
 };
-// search events based on keyword ends
 
-
-
-// search events for date or range 
-
-// exports.getEventsByDateOrRange = async (req, res) => {
-//   const { date, start, end } = req.query;
-
-//   try {
-//     let events;
-//     if (date) {
-//       events = await Event.find({ date: new Date(date) });
-//     } else if (start && end) {
-//       events = await Event.find({ date: { $gte: new Date(start), $lte: new Date(end) } });
-//     } else {
-//       return res.status(400).json({ message: 'Invalid query parameters' });
-//     }
-//     res.json(events);
-//   } catch (error) {
-//     res.status(500).json({ message: 'Error fetching events', error });
-//   }
-// };
 
 
 // Get events for a specific date or date range

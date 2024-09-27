@@ -20,7 +20,7 @@ const server = http.createServer(app);
 // const io = socketIO(server);
 const io = socketIO(server, {
   cors: {
-    origin: "http://localhost:8080", // Update with your frontend URL
+    origin: "http://localhost:8080", 
     methods: ["GET", "POST"]
   }
 });
